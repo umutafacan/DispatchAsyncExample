@@ -53,6 +53,7 @@ final class SliderView: UIView {
     func selectIndex(_ index: Int) {
         let indexPath = IndexPath(item: index, section: 0)
         
+        collectionView.layoutIfNeeded()
         collectionView.selectItem(
             at: indexPath,
             animated: false,
