@@ -21,6 +21,10 @@ final class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         self.sliderView.numbers = 4
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         if let selectedIndex = self.selectedIndex {
             self.sliderView.selectIndex(selectedIndex)
