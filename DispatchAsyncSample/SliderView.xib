@@ -21,6 +21,10 @@
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="c63-gy-itI">
                     <rect key="frame" x="0.0" y="44" width="414" height="419"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="414" id="Abj-Gd-9rW"/>
+                        <constraint firstAttribute="height" constant="419" id="ja7-62-q5N"/>
+                    </constraints>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="By5-XR-rPG">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -31,10 +35,8 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="c63-gy-itI" secondAttribute="bottom" id="GFY-90-y5U"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="c63-gy-itI" secondAttribute="trailing" id="PNH-Ai-vzb"/>
-                <constraint firstItem="c63-gy-itI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="c3G-fI-iec"/>
-                <constraint firstItem="c63-gy-itI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rLb-wh-CyB"/>
+                <constraint firstItem="c63-gy-itI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="bDj-hN-fN7"/>
+                <constraint firstItem="c63-gy-itI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wxO-IF-jvC"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
