@@ -53,10 +53,12 @@ final class SliderView: UIView {
     func selectIndex(_ index: Int) {
         let indexPath = IndexPath(item: index, section: 0)
         
-        collectionView.selectItem(
-            at: indexPath,
-            animated: false,
-            scrollPosition: .centeredHorizontally)
+        DispatchQueue.main.async {
+            self.collectionView.selectItem(
+                at: indexPath,
+                animated: false,
+                scrollPosition: .centeredHorizontally)
+        }
     }
     
     var selectedIndex: Int? {
